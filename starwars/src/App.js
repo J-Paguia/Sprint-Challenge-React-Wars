@@ -1,5 +1,9 @@
 import React from 'react';
 import './App.css';
+import CharacterList from './components/CharacterList'
+import StyledHeader from './components/Container'
+
+
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -11,7 +15,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
+      <img src = "https://upload.wikimedia.org/wikipedia/en/c/c8/Rick_and_Morty_logo.png" />
+      <StyledHeader>.: Characters :.</StyledHeader>
+      <CharacterList />
     </div>
   );
 }
